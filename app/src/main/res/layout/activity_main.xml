@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/top_theme_blue"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/headimg"
+            android:id="@+id/state_head"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android1605开发技术团队"
+            android:layout_toRightOf="@id/state_head"
+            android:id="@+id/titile"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/status_online"
+            android:layout_toRightOf="@id/titile"
+            />
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:scrollbars="none"
+   android:layout_below="@id/state_head"
+
+            >
+            <RadioGroup
+                android:id="@+id/rg_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_js_id"
+                    style="@style/radiobuttonStyle"
+                    android:checked="true"
+                    android:drawableTop="@android:drawable/ic_menu_help"
+                    android:text="军事" />
+
+                <RadioButton
+                    android:id="@+id/rb_kj_id"
+                    style="@style/radiobuttonStyle"
+                    android:drawableTop="@android:drawable/ic_dialog_email"
+                    android:text="科技" />
+
+                <RadioButton
+                    android:id="@+id/rb_yl_id"
+                    style="@style/radiobuttonStyle"
+                    android:drawableTop="@android:drawable/ic_dialog_map"
+                    android:text="娱乐" />
+
+                <RadioButton
+                    android:id="@+id/rb_sh_id"
+                    style="@style/radiobuttonStyle"
+                    android:drawableTop="@android:drawable/ic_media_next"
+                    android:text="社会" />
+
+                <RadioButton
+                    android:id="@+id/rb_ty_id"
+                    style="@style/radiobuttonStyle"
+                    android:drawableTop="@android:drawable/ic_dialog_map"
+                    android:text="体育" />
+
+                <RadioButton
+                    android:id="@+id/rb_cj_id"
+                    style="@style/radiobuttonStyle"
+                    android:drawableTop="@android:drawable/ic_media_next"
+                    android:text="财经" />
+            </RadioGroup>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_show"
+        />
+
+</LinearLayout>
